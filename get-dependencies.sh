@@ -16,6 +16,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
 make-aur-package daggerfall-unity-bin
+sed -i 's@DATA_DIR="/opt/daggerfall-unity/data"@DATA_DIR="./data"@; s@/opt/daggerfall-unity/engine/DaggerfallUnity.x86_64@./DaggerfallUnity.x86_64@' daggerfall-unity
 
 # If the application needs to be manually built that has to be done down here
 
