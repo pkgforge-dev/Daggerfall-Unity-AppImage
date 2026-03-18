@@ -6,21 +6,19 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-# pacman -Syu --noconfirm PACKAGESHERE
+pacman -Syu --noconfirm bash
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-# Comment this out if you need an AUR package
-#make-aur-package PACKAGENAME
+echo "Getting app..."
+echo "---------------------------------------------------------------"
+VERSION=1.1.1
+echo "$VERSION" > ~/version
+wget https://github.com/Interkarma/daggerfall-unity/releases/download/v1.1.1-cve-2025/dfu_linux_64bit-v${VERSION}.zip
+wget -O DaggerfallGameFiles.zip "https://drive.usercontent.google.com/download?id=0B0i8ZocaUWLGWHc1WlF3dHNUNTQ&export=download&confirm=yes"
 
-# If the application needs to be manually built that has to be done down here
-
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+mkdir -p ./AppDir/bin/engine ./AppDir/bin/data
+bsdtar -xf dfu_linux_64bit-v${VERSION}.zip -C ./AppDir/bin/engine
+bsdtar -xf DaggerfallGameFiles.zip -C ./AppDir/bin/data
