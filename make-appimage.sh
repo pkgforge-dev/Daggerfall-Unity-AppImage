@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://raw.githubusercontent.com/Interkarma/daggerfall-unity/refs/heads/master/Assets/Resources/DFUIcon.png
 export DESKTOP=/usr/share/applications/daggerfall.desktop
 export DEPLOY_OPENGL=1
+export DEPLOY_VULKAN=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/daggerfall-unity /opt/daggerfall-unity/engine/DaggerfallUnity.x86_64
