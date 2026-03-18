@@ -14,7 +14,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/daggerfall-unity /opt/daggerfall-unity/engine/DaggerfallUnity.x86_64
+quick-sharun ./AppDir/bin/daggerfall-unity ./AppDir/engine/DaggerfallUnity.x86_64
 
 # Additional changes can be done in between here
 
