@@ -14,8 +14,8 @@ export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/daggerfall-unity ./AppDir/bin/engine/DaggerfallUnity.x86_64 ./AppDir/bin/engine/UnityPlayer.so
-echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin/engine' >> ./AppDir/.env
+quick-sharun ./AppDir/bin/* #./AppDir/bin/daggerfall-unity ./AppDir/bin/engine/DaggerfallUnity.x86_64 ./AppDir/bin/engine/UnityPlayer.so
+echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 
