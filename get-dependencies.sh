@@ -18,7 +18,7 @@ get-debloated-pkgs --add-common --prefer-nano
 make-aur-package daggerfall-unity-bin
 #sed -i "s@DATA_DIR=\"/opt/daggerfall-unity/data\"@DATA_DIR=\"\$APPDIR/bin/data\"@; s@/opt/daggerfall-unity/engine/DaggerfallUnity.x86_64@\$APPDIR/bin/DaggerfallUnity.x86_64@; s@CONFIG_TEMPLATE=\"/usr/share/daggerfall-unity/settings-template.ini\"@CONFIG_TEMPLATE=\"\$APPDIR/bin/settings-template.ini\"@" /usr/bin/daggerfall-unity
 mkdir -p ./AppDir/bin
-mv -v /usr/bin/daggerfall-unity ./AppDir/bin
+#mv -v /usr/bin/daggerfall-unity ./AppDir/bin
 mv -v /usr/share/daggerfall-unity/settings-template.ini ./AppDir/bin
 mv -v /opt/daggerfall-unity/* ./AppDir/bin
 
