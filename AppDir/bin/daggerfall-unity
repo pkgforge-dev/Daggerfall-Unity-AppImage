@@ -1,7 +1,6 @@
 #!/bin/sh
 export SHARUN_DIR=$APPDIR
 
-DATA_DIR=$APPDIR/bin/data
 _save_dir=${XDG_DATA_HOME:-~/.local/share}/daggerfall-unity/save
 _config_source="/usr/share/daggerfall-unity/settings-template.ini"
 _config_file=${XDG_CONFIG_HOME:-~/.config}/unity3d/'Daggerfall Workshop'/'Daggerfall Unity'/settings.ini
