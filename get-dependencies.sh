@@ -17,8 +17,9 @@ get-debloated-pkgs --add-common --prefer-nano
 
 echo "Getting app..."
 echo "---------------------------------------------------------------"
-wget https://github.com/Interkarma/daggerfall-unity/releases/download/v1.1.1-cve-2025/dfu_linux_64bit-v1.1.1.zip
-
+VERSION=1.1.1
+echo "$VERSION" > ~/version
+wget https://github.com/Interkarma/daggerfall-unity/releases/download/v1.1.1-cve-2025/dfu_linux_64bit-v${VERSION}.zip
 
 
 
