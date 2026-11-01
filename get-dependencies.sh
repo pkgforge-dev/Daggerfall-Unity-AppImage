@@ -12,9 +12,6 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-# Comment this out if you need an AUR package
-#make-aur-package daggerfall-unity-bin
-
 echo "Getting app..."
 echo "---------------------------------------------------------------"
 VERSION=1.1.1
