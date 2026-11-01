@@ -2,5 +2,5 @@
 Type=Application
 Name=Daggerfall
 Exec=daggerfall-unity
-Icon=UnityPlayer
+Icon=DFUIcon
 Categories=Game 
